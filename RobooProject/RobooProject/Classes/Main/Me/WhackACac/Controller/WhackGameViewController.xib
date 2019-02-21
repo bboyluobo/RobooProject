@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WhackGameViewController">
+            <connections>
+                <outlet property="duneOne" destination="QZa-bG-dtm" id="geE-jO-s9n"/>
+                <outlet property="duneThree" destination="u9e-qH-YQV" id="2hU-0S-E1x"/>
+                <outlet property="duneTwo" destination="xsz-Zw-SwA" id="2Xk-F4-PwQ"/>
+                <outlet property="pausePlay" destination="ljJ-PB-cCs" id="Q7y-92-iLp"/>
+                <outlet property="scoreLabel" destination="qiI-47-S9T" id="TWP-ZZ-4mE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BackgroundDunes" translatesAutoresizingMaskIntoConstraints="NO" id="RkC-Cd-iyo">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="146.5"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljJ-PB-cCs">
+                    <rect key="frame" x="0.0" y="10" width="58" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="6Kc-Ee-op7"/>
+                        <constraint firstAttribute="width" constant="58" id="HA6-ju-t3K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="pauseLight">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="PausePressed">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Dune3" translatesAutoresizingMaskIntoConstraints="NO" id="u9e-qH-YQV">
+                    <rect key="frame" x="0.0" y="115" width="667" height="112.5"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Dune2" translatesAutoresizingMaskIntoConstraints="NO" id="xsz-Zw-SwA">
+                    <rect key="frame" x="0.0" y="195.5" width="667" height="102"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Dune1" translatesAutoresizingMaskIntoConstraints="NO" id="QZa-bG-dtm">
+                    <rect key="frame" x="0.0" y="254" width="667" height="121"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Score" translatesAutoresizingMaskIntoConstraints="NO" id="ugQ-yE-sPc">
+                    <rect key="frame" x="20" y="303" width="125" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="2N5-Ej-4NP"/>
+                        <constraint firstAttribute="width" constant="125" id="cEH-0J-mdp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiI-47-S9T">
+                    <rect key="frame" x="20" y="303" width="125" height="62"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="xsz-Zw-SwA" secondAttribute="bottom" multiplier="1.26" id="12D-v9-exY"/>
+                <constraint firstAttribute="trailing" secondItem="xsz-Zw-SwA" secondAttribute="trailing" id="1Vs-lu-zee"/>
+                <constraint firstItem="xsz-Zw-SwA" firstAttribute="top" secondItem="u9e-qH-YQV" secondAttribute="bottom" constant="-32" id="3hI-PK-800"/>
+                <constraint firstItem="qiI-47-S9T" firstAttribute="top" secondItem="ugQ-yE-sPc" secondAttribute="top" id="5hn-kD-eRG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="u9e-qH-YQV" secondAttribute="trailing" id="DdW-ck-9df"/>
+                <constraint firstItem="xsz-Zw-SwA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DpD-nS-D1h"/>
+                <constraint firstItem="qiI-47-S9T" firstAttribute="trailing" secondItem="ugQ-yE-sPc" secondAttribute="trailing" id="Exx-MT-j8t"/>
+                <constraint firstItem="ljJ-PB-cCs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="O6n-zx-jix"/>
+                <constraint firstItem="qiI-47-S9T" firstAttribute="bottom" secondItem="ugQ-yE-sPc" secondAttribute="bottom" id="OJk-HY-o9l"/>
+                <constraint firstItem="QZa-bG-dtm" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="QvT-4z-gEx"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="QZa-bG-dtm" secondAttribute="trailing" id="SIs-Tf-qkA"/>
+                <constraint firstItem="ugQ-yE-sPc" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="SRa-zW-OFg"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="QZa-bG-dtm" secondAttribute="bottom" id="TFQ-dp-L0F"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="u9e-qH-YQV" secondAttribute="bottom" multiplier="1.65" id="azy-rj-hc3"/>
+                <constraint firstItem="ljJ-PB-cCs" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="cUU-79-M3f"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RkC-Cd-iyo" secondAttribute="trailing" id="foi-bJ-rKk"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="RkC-Cd-iyo" secondAttribute="bottom" multiplier="2.56" id="hhH-uW-KES"/>
+                <constraint firstItem="u9e-qH-YQV" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="maN-p6-Udr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="ugQ-yE-sPc" secondAttribute="bottom" constant="10" id="nRL-em-RZ0"/>
+                <constraint firstItem="RkC-Cd-iyo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="naX-L5-q0g"/>
+                <constraint firstItem="qiI-47-S9T" firstAttribute="leading" secondItem="ugQ-yE-sPc" secondAttribute="leading" id="paq-Hb-gcQ"/>
+                <constraint firstItem="u9e-qH-YQV" firstAttribute="top" secondItem="RkC-Cd-iyo" secondAttribute="bottom" constant="-32" id="sFa-kd-Hgw"/>
+                <constraint firstItem="QZa-bG-dtm" firstAttribute="top" secondItem="xsz-Zw-SwA" secondAttribute="bottom" constant="-44" id="vaV-SX-5fd"/>
+                <constraint firstItem="RkC-Cd-iyo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="zqu-sO-trw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="145.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackgroundDunes" width="1024" height="292"/>
+        <image name="Dune1" width="1024" height="242"/>
+        <image name="Dune2" width="1024" height="204"/>
+        <image name="Dune3" width="1024" height="228"/>
+        <image name="PausePressed" width="116" height="116"/>
+        <image name="Score" width="250" height="123"/>
+        <image name="pauseLight" width="116" height="116"/>
+    </resources>
+</document>

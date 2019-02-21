@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15A0623956A0587C78ACABC8 /* Pods_RobooSwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFC5B67505D2BE0DA1E0C1A /* Pods_RobooSwiftProject.framework */; };
+		20CC028F2136497C00A9871F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC028E2136497C00A9871F /* MainTabBarController.swift */; };
+		20CC029121364ACA00A9871F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC029021364ACA00A9871F /* BaseNavigationController.swift */; };
+		20CC029621364BDD00A9871F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC029521364BDD00A9871F /* HomeViewController.swift */; };
+		20CC029821364BF800A9871F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC029721364BF800A9871F /* MineViewController.swift */; };
+		20CC029A21364C0A00A9871F /* RehearseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC029921364C0A00A9871F /* RehearseViewController.swift */; };
+		20CC029C21368E4700A9871F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC029B21368E4700A9871F /* BaseViewController.swift */; };
+		20D8FF1021353DB300A0AC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8FF0F21353DB300A0AC43 /* AppDelegate.swift */; };
+		20D8FF1221353DB300A0AC43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8FF1121353DB300A0AC43 /* ViewController.swift */; };
+		20D8FF1521353DB300A0AC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D8FF1321353DB300A0AC43 /* Main.storyboard */; };
+		20D8FF1721353DB400A0AC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D8FF1621353DB400A0AC43 /* Assets.xcassets */; };
+		20D8FF1A21353DB400A0AC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D8FF1821353DB400A0AC43 /* LaunchScreen.storyboard */; };
+		20D8FF2521353DB400A0AC43 /* RobooSwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8FF2421353DB400A0AC43 /* RobooSwiftProjectTests.swift */; };
+		20D8FF3021353DB400A0AC43 /* RobooSwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8FF2F21353DB400A0AC43 /* RobooSwiftProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20D8FF2121353DB400A0AC43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20D8FF0421353DB300A0AC43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20D8FF0B21353DB300A0AC43;
+			remoteInfo = RobooSwiftProject;
+		};
+		20D8FF2C21353DB400A0AC43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20D8FF0421353DB300A0AC43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20D8FF0B21353DB300A0AC43;
+			remoteInfo = RobooSwiftProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FFC5B67505D2BE0DA1E0C1A /* Pods_RobooSwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobooSwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CC028E2136497C00A9871F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		20CC029021364ACA00A9871F /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		20CC029521364BDD00A9871F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		20CC029721364BF800A9871F /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		20CC029921364C0A00A9871F /* RehearseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RehearseViewController.swift; sourceTree = "<group>"; };
+		20CC029B21368E4700A9871F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		20D8FF0C21353DB300A0AC43 /* RobooSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobooSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D8FF0F21353DB300A0AC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20D8FF1121353DB300A0AC43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20D8FF1421353DB300A0AC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20D8FF1621353DB400A0AC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20D8FF1921353DB400A0AC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20D8FF1B21353DB400A0AC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D8FF2021353DB400A0AC43 /* RobooSwiftProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobooSwiftProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D8FF2421353DB400A0AC43 /* RobooSwiftProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobooSwiftProjectTests.swift; sourceTree = "<group>"; };
+		20D8FF2621353DB400A0AC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D8FF2B21353DB400A0AC43 /* RobooSwiftProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobooSwiftProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D8FF2F21353DB400A0AC43 /* RobooSwiftProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobooSwiftProjectUITests.swift; sourceTree = "<group>"; };
+		20D8FF3121353DB400A0AC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1C9B655B0F9FFD67FC8B18 /* Pods-RobooSwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobooSwiftProject.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-RobooSwiftProject/Pods-RobooSwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
+		E29A03B619D78275508A10F6 /* Pods-RobooSwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobooSwiftProject.release.xcconfig"; path = "../Pods/Target Support Files/Pods-RobooSwiftProject/Pods-RobooSwiftProject.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20D8FF0921353DB300A0AC43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A0623956A0587C78ACABC8 /* Pods_RobooSwiftProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D8FF1D21353DB400A0AC43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D8FF2821353DB400A0AC43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20CC02892136412D00A9871F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				20CC028A2136412D00A9871F /* Base */,
+				20CC028B2136412D00A9871F /* Category */,
+				20CC028C2136412D00A9871F /* Helpers */,
+				20CC028D2136412D00A9871F /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		20CC028A2136412D00A9871F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				20CC029021364ACA00A9871F /* BaseNavigationController.swift */,
+				20CC029B21368E4700A9871F /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		20CC028B2136412D00A9871F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		20CC028C2136412D00A9871F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		20CC028D2136412D00A9871F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				20CC029421364BAD00A9871F /* Home */,
+				20CC029321364BAD00A9871F /* Mine */,
+				20CC029221364BAD00A9871F /* Rehearse */,
+				20CC028E2136497C00A9871F /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		20CC029221364BAD00A9871F /* Rehearse */ = {
+			isa = PBXGroup;
+			children = (
+				20CC029921364C0A00A9871F /* RehearseViewController.swift */,
+			);
+			path = Rehearse;
+			sourceTree = "<group>";
+		};
+		20CC029321364BAD00A9871F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				20CC029721364BF800A9871F /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		20CC029421364BAD00A9871F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				20CC029521364BDD00A9871F /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		20D8FF0321353DB300A0AC43 = {
+			isa = PBXGroup;
+			children = (
+				20D8FF0E21353DB300A0AC43 /* RobooSwiftProject */,
+				20D8FF2321353DB400A0AC43 /* RobooSwiftProjectTests */,
+				20D8FF2E21353DB400A0AC43 /* RobooSwiftProjectUITests */,
+				20D8FF0D21353DB300A0AC43 /* Products */,
+				7D9C002BBEDC14EF4A27B52A /* Pods */,
+				72E93E3C6C33EC2A75BD52C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20D8FF0D21353DB300A0AC43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20D8FF0C21353DB300A0AC43 /* RobooSwiftProject.app */,
+				20D8FF2021353DB400A0AC43 /* RobooSwiftProjectTests.xctest */,
+				20D8FF2B21353DB400A0AC43 /* RobooSwiftProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20D8FF0E21353DB300A0AC43 /* RobooSwiftProject */ = {
+			isa = PBXGroup;
+			children = (
+				20CC02892136412D00A9871F /* Classes */,
+				20D8FF0F21353DB300A0AC43 /* AppDelegate.swift */,
+				20D8FF1121353DB300A0AC43 /* ViewController.swift */,
+				20D8FF1321353DB300A0AC43 /* Main.storyboard */,
+				20D8FF1621353DB400A0AC43 /* Assets.xcassets */,
+				20D8FF1821353DB400A0AC43 /* LaunchScreen.storyboard */,
+				20D8FF1B21353DB400A0AC43 /* Info.plist */,
+			);
+			path = RobooSwiftProject;
+			sourceTree = "<group>";
+		};
+		20D8FF2321353DB400A0AC43 /* RobooSwiftProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				20D8FF2421353DB400A0AC43 /* RobooSwiftProjectTests.swift */,
+				20D8FF2621353DB400A0AC43 /* Info.plist */,
+			);
+			path = RobooSwiftProjectTests;
+			sourceTree = "<group>";
+		};
+		20D8FF2E21353DB400A0AC43 /* RobooSwiftProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20D8FF2F21353DB400A0AC43 /* RobooSwiftProjectUITests.swift */,
+				20D8FF3121353DB400A0AC43 /* Info.plist */,
+			);
+			path = RobooSwiftProjectUITests;
+			sourceTree = "<group>";
+		};
+		72E93E3C6C33EC2A75BD52C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FFC5B67505D2BE0DA1E0C1A /* Pods_RobooSwiftProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D9C002BBEDC14EF4A27B52A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C9B655B0F9FFD67FC8B18 /* Pods-RobooSwiftProject.debug.xcconfig */,
+				E29A03B619D78275508A10F6 /* Pods-RobooSwiftProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20D8FF0B21353DB300A0AC43 /* RobooSwiftProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D8FF3421353DB400A0AC43 /* Build configuration list for PBXNativeTarget "RobooSwiftProject" */;
+			buildPhases = (
+				87EAAB2ACE19FA0399C08EF9 /* [CP] Check Pods Manifest.lock */,
+				20D8FF0821353DB300A0AC43 /* Sources */,
+				20D8FF0921353DB300A0AC43 /* Frameworks */,
+				20D8FF0A21353DB300A0AC43 /* Resources */,
+				037EB485C49995E3E801EE1E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobooSwiftProject;
+			productName = RobooSwiftProject;
+			productReference = 20D8FF0C21353DB300A0AC43 /* RobooSwiftProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D8FF1F21353DB400A0AC43 /* RobooSwiftProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D8FF3721353DB400A0AC43 /* Build configuration list for PBXNativeTarget "RobooSwiftProjectTests" */;
+			buildPhases = (
+				20D8FF1C21353DB400A0AC43 /* Sources */,
+				20D8FF1D21353DB400A0AC43 /* Frameworks */,
+				20D8FF1E21353DB400A0AC43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20D8FF2221353DB400A0AC43 /* PBXTargetDependency */,
+			);
+			name = RobooSwiftProjectTests;
+			productName = RobooSwiftProjectTests;
+			productReference = 20D8FF2021353DB400A0AC43 /* RobooSwiftProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20D8FF2A21353DB400A0AC43 /* RobooSwiftProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D8FF3A21353DB400A0AC43 /* Build configuration list for PBXNativeTarget "RobooSwiftProjectUITests" */;
+			buildPhases = (
+				20D8FF2721353DB400A0AC43 /* Sources */,
+				20D8FF2821353DB400A0AC43 /* Frameworks */,
+				20D8FF2921353DB400A0AC43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20D8FF2D21353DB400A0AC43 /* PBXTargetDependency */,
+			);
+			name = RobooSwiftProjectUITests;
+			productName = RobooSwiftProjectUITests;
+			productReference = 20D8FF2B21353DB400A0AC43 /* RobooSwiftProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20D8FF0421353DB300A0AC43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "物联网美天科技";
+				TargetAttributes = {
+					20D8FF0B21353DB300A0AC43 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					20D8FF1F21353DB400A0AC43 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 20D8FF0B21353DB300A0AC43;
+					};
+					20D8FF2A21353DB400A0AC43 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 20D8FF0B21353DB300A0AC43;
+					};
+				};
+			};
+			buildConfigurationList = 20D8FF0721353DB300A0AC43 /* Build configuration list for PBXProject "RobooSwiftProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20D8FF0321353DB300A0AC43;
+			productRefGroup = 20D8FF0D21353DB300A0AC43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20D8FF0B21353DB300A0AC43 /* RobooSwiftProject */,
+				20D8FF1F21353DB400A0AC43 /* RobooSwiftProjectTests */,
+				20D8FF2A21353DB400A0AC43 /* RobooSwiftProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20D8FF0A21353DB300A0AC43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D8FF1A21353DB400A0AC43 /* LaunchScreen.storyboard in Resources */,
+				20D8FF1721353DB400A0AC43 /* Assets.xcassets in Resources */,
+				20D8FF1521353DB300A0AC43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D8FF1E21353DB400A0AC43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D8FF2921353DB400A0AC43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		037EB485C49995E3E801EE1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-RobooSwiftProject/Pods-RobooSwiftProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-RobooSwiftProject/Pods-RobooSwiftProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87EAAB2ACE19FA0399C08EF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RobooSwiftProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20D8FF0821353DB300A0AC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CC029621364BDD00A9871F /* HomeViewController.swift in Sources */,
+				20CC029121364ACA00A9871F /* BaseNavigationController.swift in Sources */,
+				20D8FF1221353DB300A0AC43 /* ViewController.swift in Sources */,
+				20D8FF1021353DB300A0AC43 /* AppDelegate.swift in Sources */,
+				20CC029A21364C0A00A9871F /* RehearseViewController.swift in Sources */,
+				20CC029C21368E4700A9871F /* BaseViewController.swift in Sources */,
+				20CC028F2136497C00A9871F /* MainTabBarController.swift in Sources */,
+				20CC029821364BF800A9871F /* MineViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D8FF1C21353DB400A0AC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D8FF2521353DB400A0AC43 /* RobooSwiftProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D8FF2721353DB400A0AC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D8FF3021353DB400A0AC43 /* RobooSwiftProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20D8FF2221353DB400A0AC43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20D8FF0B21353DB300A0AC43 /* RobooSwiftProject */;
+			targetProxy = 20D8FF2121353DB400A0AC43 /* PBXContainerItemProxy */;
+		};
+		20D8FF2D21353DB400A0AC43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20D8FF0B21353DB300A0AC43 /* RobooSwiftProject */;
+			targetProxy = 20D8FF2C21353DB400A0AC43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20D8FF1321353DB300A0AC43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D8FF1421353DB300A0AC43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20D8FF1821353DB400A0AC43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D8FF1921353DB400A0AC43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20D8FF3221353DB400A0AC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20D8FF3321353DB400A0AC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20D8FF3521353DB400A0AC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B1C9B655B0F9FFD67FC8B18 /* Pods-RobooSwiftProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VLJGVPPG7;
+				INFOPLIST_FILE = RobooSwiftProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chineseRoboo.RobooSwiftProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D8FF3621353DB400A0AC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E29A03B619D78275508A10F6 /* Pods-RobooSwiftProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VLJGVPPG7;
+				INFOPLIST_FILE = RobooSwiftProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chineseRoboo.RobooSwiftProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20D8FF3821353DB400A0AC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VLJGVPPG7;
+				INFOPLIST_FILE = RobooSwiftProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chineseRoboo.RobooSwiftProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobooSwiftProject.app/RobooSwiftProject";
+			};
+			name = Debug;
+		};
+		20D8FF3921353DB400A0AC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VLJGVPPG7;
+				INFOPLIST_FILE = RobooSwiftProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chineseRoboo.RobooSwiftProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobooSwiftProject.app/RobooSwiftProject";
+			};
+			name = Release;
+		};
+		20D8FF3B21353DB400A0AC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VLJGVPPG7;
+				INFOPLIST_FILE = RobooSwiftProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chineseRoboo.RobooSwiftProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RobooSwiftProject;
+			};
+			name = Debug;
+		};
+		20D8FF3C21353DB400A0AC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VLJGVPPG7;
+				INFOPLIST_FILE = RobooSwiftProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chineseRoboo.RobooSwiftProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RobooSwiftProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20D8FF0721353DB300A0AC43 /* Build configuration list for PBXProject "RobooSwiftProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D8FF3221353DB400A0AC43 /* Debug */,
+				20D8FF3321353DB400A0AC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D8FF3421353DB400A0AC43 /* Build configuration list for PBXNativeTarget "RobooSwiftProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D8FF3521353DB400A0AC43 /* Debug */,
+				20D8FF3621353DB400A0AC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D8FF3721353DB400A0AC43 /* Build configuration list for PBXNativeTarget "RobooSwiftProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D8FF3821353DB400A0AC43 /* Debug */,
+				20D8FF3921353DB400A0AC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D8FF3A21353DB400A0AC43 /* Build configuration list for PBXNativeTarget "RobooSwiftProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D8FF3B21353DB400A0AC43 /* Debug */,
+				20D8FF3C21353DB400A0AC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20D8FF0421353DB300A0AC43 /* Project object */;
+}

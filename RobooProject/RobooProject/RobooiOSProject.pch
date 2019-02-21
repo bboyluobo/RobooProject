@@ -1,0 +1,100 @@
+//
+//  RobooiOSProject.pch
+//  RobooProject
+//
+//  Created by 物联网美天科技 on 2018/5/14.
+//  Copyright © 2018年 物联网美天科技. All rights reserved.
+//
+
+#ifndef RobooiOSProject_pch
+#define RobooiOSProject_pch
+
+#pragma clang diagnostic ignored "-Wstrict-prototypes"
+
+
+
+// category
+#import "UIView+RBNjHuFrame.h"
+#import "MBProgressHUD+RB.h"
+#import "UIView+GestureCallback.h"
+#import "UIColor+Random.h"
+#import "UIButton+RB.h"
+#import "UITextView+WZB.h"
+#import "NSDecimalNumber+Addtion.h"
+#import "JXTAlertController.h"
+
+
+// libs
+#import <GameKit/GameKit.h>
+#import <AFNetworking.h>
+#import <IQKeyboardManager.h>
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
+#import <SDCycleScrollView.h>
+#import <UIImageView+WebCache.h>
+#import <YYAsyncLayer.h>
+#import <YYCategories.h>
+#import <YYImage.h>
+#import <ReactiveObjC.h>
+#import <YYText.h>
+#import <Toast.h>
+
+// helpers
+#import "RBEasyBlankPageView.h"
+
+
+#import "RBConst.h"
+//弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
+
+#define RBWeak(type)  __weak typeof(type) weak##type = type
+#define WEAKSELF        typeof(self) __weak weakSelf = self;
+/**
+ *  属性转字符串
+ */
+#define RBKeyPath(obj, key) @(((void)obj.key, #key))
+
+//返回AppDelegate指针
+#define APP ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+#define  SCREEN_HRIGHT [[UIScreen mainScreen] bounds].size.height
+#define  SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+
+
+//是否是空对象
+#define RBIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//不同屏幕尺寸字体适配
+#define kScreenWidthRatio  (UIScreen.mainScreen.bounds.size.width / 375.0)
+#define kScreenHeightRatio (UIScreen.mainScreen.bounds.size.height / 667.0)
+#define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
+#define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+#define AdaptedFontSize(R)     [UIFont systemFontOfSize:AdaptedWidth(R)]
+
+//由角度转换弧度
+#define kDegreesToRadian(x)      (M_PI * (x) / 180.0)
+//由弧度转换角度
+#define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
+
+
+// 设置Dlog可以打印出类名,方法名,行数.
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+
+#ifdef DEBUG
+#define NSLogFunc NSLog(@"\n=====Begin==========\n FILE: %@\n FUNC: %s\n LINE: %d\n =====End==========", [NSString stringWithUTF8String:__FILE__].lastPathComponent, __PRETTY_FUNCTION__, __LINE__)
+#else
+#define NSLogFunc
+#endif
+
+#endif /* RobooiOSProject_pch */
