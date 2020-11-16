@@ -44,11 +44,11 @@
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
 
     if (size.width > size.height) { // 横屏
-        _myWebView.frame = CGRectMake(0, 64, size.width, size.height-64);
+        _myWebView.frame = CGRectMake(0, Height_NavBar, size.width, size.height-Height_NavBar);
         // 横屏布局 balabala
     } else {
         // 竖屏布局 balabala
-        _myWebView.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HRIGHT-64);
+        _myWebView.frame = CGRectMake(0, Height_NavBar, SCREEN_WIDTH, SCREEN_HRIGHT-Height_NavBar);
     }
 }
 

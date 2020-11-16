@@ -8,11 +8,13 @@
 
 #import "RBWKWebViewController.h"
 #import <WebKit/WebKit.h>
-@interface RBWKWebViewController ()<WKNavigationDelegate,WKUIDelegate>
+@interface RBWKWebViewController ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 
 @property (nonatomic, strong) WKWebView * mineWKWebView;
 //进度条
 @property (nonatomic, strong) CALayer * progressLayer;
+
+@property (nonatomic, strong) WKScriptMessage *ocjsHelper;
 @end
 
 @implementation RBWKWebViewController
@@ -67,6 +69,13 @@
     //decisionHandler(WKNavigationResponsePolicyCancel);
 }
 
+#pragma mark - WKScriptMessageHandler
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
+{
+
+}
+
+
 #pragma mark -- WKWebViewObserver
 
 - (void)observeWKWebKeyPath {
@@ -96,9 +105,15 @@
         //不通过用户交互，是否可以打开窗口
         preferences.javaScriptCanOpenWindowsAutomatically = YES;
         config.preferences = preferences;
-        _mineWKWebView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HRIGHT-64) configuration:config];
-//        https://www.baidu.com http://www.luoboiot.com
-        NSString *url = @"http://www.luoboiot.com";
+
+        NSString *jScript = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
+        WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:jScript injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+        WKUserContentController *wkUController = [[WKUserContentController alloc] init];
+        [wkUController addUserScript:wkUScript];
+        [wkUController addScriptMessageHandler:(id)self.ocjsHelper name:@""];
+        config.userContentController = wkUController;
+        _mineWKWebView = [[WKWebView alloc]initWithFrame:CGRectMake(0, Height_NavBar, SCREEN_WIDTH, SCREEN_HRIGHT-Height_NavBar) configuration:config];
+        NSString *url = @"https://www.baidu.com";
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
         [_mineWKWebView loadRequest:request];
         _mineWKWebView.navigationDelegate = self;

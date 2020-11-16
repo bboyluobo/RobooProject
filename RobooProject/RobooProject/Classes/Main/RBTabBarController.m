@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tabBar.tintColor = [UIColor redColor];
-    [self setValue:[NSValue valueWithUIOffset:UIOffsetMake(0, -3)] forKeyPath:RBKeyPath(self, titlePositionAdjustment)];
+//    [self setValue:[NSValue valueWithUIOffset:UIOffsetMake(0, -3)] forKeyPath:RBKeyPath(self, titlePositionAdjustment)];
     [self addTabarItems] ;
     [self addChildViewControllers];
     self.delegate = self;

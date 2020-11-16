@@ -20,7 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.dateArray = [NSArray array];
     self.tableView.tableFooterView = [UIView new];
+
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
